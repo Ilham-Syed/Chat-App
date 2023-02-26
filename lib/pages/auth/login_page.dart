@@ -96,14 +96,14 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(height: 10,),
                   Text.rich(
                     TextSpan(
-                      text: "Dont have an account?",
+                      text: "Dont have an account?  ",
 
                       style: const TextStyle(color: Colors.black,fontSize: 14),
                       children: <TextSpan>[
                         TextSpan(
                           text: "Register Here",
                           style: const TextStyle(
-                            color: Colors.black,fontSize: 14,
+                            color: Colors.black,fontSize: 14,decoration: TextDecoration.underline,fontWeight: FontWeight.w700
                           ),
                           recognizer: TapGestureRecognizer()..onTap =(){
                             nextScreenReplace(context, const RegisterPage());
